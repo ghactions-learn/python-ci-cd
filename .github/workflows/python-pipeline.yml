@@ -24,9 +24,7 @@ jobs:
     #       pylint hello.py
 
       - name: Test the script
-        run: python hello.py | grep -i hello
-    #   - name: Test the script
-    #     run: python hello.py | grep -i hello || exit 1
+        run: python hello.py | grep -i hello || exit 1
 
   build-and-push:
     name: Build and Push Container
